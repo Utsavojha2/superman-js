@@ -29,6 +29,9 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Install Jest
+        run: npm install jest --save-dev
+
       - name: Run Tests
         run: npm test
 
